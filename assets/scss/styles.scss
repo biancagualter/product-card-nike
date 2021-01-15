@@ -60,3 +60,57 @@ ul {
 a {
     text-decoration: none;
 }
+
+.bd-grid {
+    max-width: 1200px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--white-color);
+}
+
+.nav {
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_menu {
+        @media screen and(max-width: 968px){
+            position: fixed;
+            left: -100%;
+            top: $header-height;
+            background-color: var(--white-color);
+            width: 80%;
+            height: 100%;
+            padding: 2rem;
+            z-index: var(--z-fixed);
+            transition: .3s;
+        }
+    }
+    &_item {
+        margin-bottom: 2rem;
+        font-weight: $font-bold;
+        text-transform: uppercase;
+    }
+
+    &_link {
+        color: var(--black-color)
+    }
+
+    &_toggle {
+        cursor: pointer
+    }
+}
+
+.show {
+    left: 0;
+}
+
