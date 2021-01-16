@@ -165,6 +165,7 @@ a {
   margin-right: auto;
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
+  opacity: 0;
   -webkit-filter: drop-shadow(0 10px 10px rgba(17, 17, 17, 0.4));
           filter: drop-shadow(0 10px 10px rgba(17, 17, 17, 0.4));
 }
@@ -222,6 +223,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .size_title {
@@ -280,7 +284,107 @@ a {
 .price_button {
   background-color: var(--primary);
   color: var(--white-color);
-  padding: 1.25rem 3.125rem;
+  padding: 1.25rem 1.8rem;
   border-radius: .5rem;
+}
+
+@media screen and (min-width: 968px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body {
+    margin: 0;
+  }
+  .nav {
+    height: 4rem;
+  }
+  .nav_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav_item {
+    margin-right: 3rem;
+    margin-bottom: 0;
+  }
+  .nav_toggle {
+    display: none;
+  }
+  .home {
+    height: 100vh;
+    -ms-grid-columns: max-content max-content;
+        grid-template-columns: -webkit-max-content -webkit-max-content;
+        grid-template-columns: max-content max-content;
+    -ms-grid-rows: max-content;
+        grid-template-rows: -webkit-max-content;
+        grid-template-rows: max-content;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 6rem;
+            column-gap: 6rem;
+  }
+  .sneaker_figure {
+    width: 430px;
+    height: 430px;
+  }
+  .sneaker_img {
+    width: 550px;
+    top: 13%;
+    left: -6%;
+  }
+  .sneaker_colors {
+    right: initial;
+    bottom: 0;
+  }
+  .sneaker_colors span {
+    display: inline-block;
+  }
+  .info {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .data {
+    margin-bottom: 2.5rem;
+  }
+  .data_subtitle {
+    font-size: 1.5rem;
+  }
+  .data_title {
+    margin-bottom: 1rem;
+  }
+  .size {
+    margin-bottom: 2.5rem;
+  }
+  .size .sizes {
+    width: 34px;
+    height: 34px;
+    line-height: 35px;
+  }
+  .price {
+    position: initial;
+    background-color: initial;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .price_title {
+    margin-right: 2.5rem;
+    color: var(--black-color);
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

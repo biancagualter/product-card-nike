@@ -147,7 +147,7 @@ a {
         margin-left: auto;
         margin-right: auto;
         transform: rotate(30deg);
-        // opacity: 0;
+        opacity: 0;
         filter: drop-shadow(0 10px 10px rgba(17, 17, 17, 0.4));
 
         &.shows {
@@ -196,6 +196,7 @@ a {
 
 .actions {
     display: flex;
+    justify-content: space-between;
 }
 
 .size {
@@ -207,7 +208,7 @@ a {
         display: flex;
     }
 
-    .sizes {
+    & .sizes {
         width: 30px;
         height: 30px;
         margin-right: .5rem;
@@ -218,11 +219,12 @@ a {
         cursor: pointer;
     }
 
-    .sizes.active {
+    & .sizes.active {
         background-color: var(--primary);
         color: var(--white-color);
     }
 }
+
 
 .price {
     position: fixed;
@@ -244,7 +246,109 @@ a {
     &_button {
         background-color: var(--primary);
         color: var(--white-color);
-        padding: 1.25rem 3.125rem;
+        padding: 1.25rem 1.8rem;
         border-radius: .5rem;
     }
 }
+
+@media screen and(min-width: 968px){
+    .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .nav {
+        height: $header-height + 1rem;
+
+        &_list {
+            display: flex;
+        }
+        &_item {
+            margin-right: 3rem;
+            margin-bottom: 0;;
+        }
+        &_toggle {
+            display: none;
+        }
+    }
+
+    .home {
+        height: 100vh;
+        grid-template-columns: max-content max-content;
+        grid-template-rows: max-content;
+        align-content: center;
+        justify-content: center;
+        column-gap: 6rem;
+    }
+
+    .sneaker {
+
+        &_figure {
+            width: 430px;
+            height: 430px;
+        }
+        &_img {
+            width: 550px;
+            top: 13%;
+            left: -6%;
+        }
+        &_colors{
+            right: initial;
+            bottom: 0;
+
+            & span {
+                display: inline-block;
+            }
+        }
+    }
+
+    .info {
+        align-self: center;
+    }
+
+    .data {
+        margin-bottom: 2.5rem;
+
+        &_subtitle {
+            font-size: 1.5rem;
+        }
+        &_title {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .size {
+        margin-bottom: 2.5rem;
+
+        & .sizes {
+            width: 34px;
+            height: 34px;
+            line-height: 35px;
+        }
+    }
+
+    .price {
+        position: initial;
+        background-color: initial;
+        justify-content: space-between;
+        box-shadow: none;
+
+        &_title {
+            margin-right: 2.5rem;
+            color: var(--black-color);
+            font-weight: $font-medium;
+        }
+    }
+}
+
+@media screen and(min-width: 1200px){
+    .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
