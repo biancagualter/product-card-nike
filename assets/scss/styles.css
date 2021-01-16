@@ -118,4 +118,169 @@ a {
 .show {
   left: 0;
 }
+
+.home {
+  height: calc(100vh - 3rem);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1.5fr;
+      grid-template-rows: 1fr 1.5fr;
+      grid-template-areas: 'sneaker';
+  overflow: hidden;
+}
+
+.sneaker {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: sneaker;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.sneaker_figure {
+  width: 240px;
+  height: 240px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.sneaker_img {
+  width: 313px;
+  position: absolute;
+  top: 16%;
+  left: 9%;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-filter: drop-shadow(0 10px 10px rgba(17, 17, 17, 0.4));
+          filter: drop-shadow(0 10px 10px rgba(17, 17, 17, 0.4));
+}
+
+.sneaker_img.shows {
+  opacity: 1;
+}
+
+.sneaker_colors {
+  position: absolute;
+  right: 2%;
+}
+
+.sneaker_color {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-bottom: .5rem;
+  cursor: pointer;
+}
+
+.sneaker_color.active {
+  border: 2px solid var(--white-color);
+  -webkit-box-shadow: 0 0 2px black;
+          box-shadow: 0 0 2px black;
+}
+
+.sneaker_colors-one {
+  background-color: var(--first-color);
+}
+
+.sneaker_colors-two {
+  background-color: var(--black-color);
+}
+
+.data {
+  margin-bottom: 1.5rem;
+}
+
+.data_subtitle {
+  font-size: var(--normal-font-size);
+}
+
+.data_title {
+  font-size: var(--biggest-font-size);
+  margin-bottom: .5rem;
+}
+
+.data_description {
+  font-size: var(--normal-font-size);
+}
+
+.actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.size_title {
+  font-size: var(--normal-font-size);
+  margin-bottom: 1rem;
+}
+
+.size_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.size .sizes {
+  width: 30px;
+  height: 30px;
+  margin-right: .5rem;
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  line-height: 30px;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+
+.size .sizes.active {
+  background-color: var(--primary);
+  color: var(--white-color);
+}
+
+.price {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 83px;
+  background-color: var(--white-color);
+  border-radius: 1.5rem 1.5rem 0 0;
+  -webkit-box-shadow: 0 0 20px rgba(17, 17, 17, 0.25);
+          box-shadow: 0 0 20px rgba(17, 17, 17, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price_title {
+  font-size: var(--big-font-size);
+  color: var(--black-color);
+}
+
+.price_button {
+  background-color: var(--primary);
+  color: var(--white-color);
+  padding: 1.25rem 3.125rem;
+  border-radius: .5rem;
+}
 /*# sourceMappingURL=styles.css.map */
