@@ -248,6 +248,8 @@ a {
   line-height: 30px;
   border-radius: .25rem;
   cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .size .sizes.active {
@@ -286,6 +288,8 @@ a {
   color: var(--white-color);
   padding: 1.25rem 1.8rem;
   border-radius: .5rem;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 @media screen and (min-width: 968px) {
