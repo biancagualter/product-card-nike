@@ -102,11 +102,11 @@ a {
     }
 
     &_link {
-        color: var(--black-color)
+        color: var(--black-color);
     }
 
     &_toggle {
-        cursor: pointer
+        cursor: pointer;
     }
 }
 
@@ -141,7 +141,7 @@ a {
     &_img {
         width: 313px;
         position: absolute;
-        top: 16%;
+        top: 17%;
         left: 9%;
         right: 0;
         margin-left: auto;
@@ -149,6 +149,7 @@ a {
         transform: rotate(30deg);
         opacity: 0;
         filter: drop-shadow(0 10px 10px rgba(17, 17, 17, 0.4));
+        
 
         &.shows {
             opacity: 1;
@@ -184,6 +185,7 @@ a {
 
     &_subtitle {
         font-size: var(--normal-font-size);
+        font-weight: $font-medium;
     }
     &_title {
         font-size: var(--biggest-font-size);
@@ -217,7 +219,6 @@ a {
         line-height: 30px;
         border-radius: .25rem;
         cursor: pointer;
-        transition: .5s;
     }
 
     & .sizes.active {
@@ -254,10 +255,6 @@ a {
 }
 
 @media screen and(min-width: 968px){
-    .bd-grid {
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     body {
         margin: 0;
@@ -296,7 +293,7 @@ a {
         &_img {
             width: 550px;
             top: 13%;
-            left: -6%;
+            left: -5%;
         }
         &_colors{
             right: initial;
