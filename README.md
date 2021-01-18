@@ -1,5 +1,5 @@
 # Product Card - Landing Page - Nike
-<p align="center">Responsive product card landing page inspired by the Nike website </p>
+<p>Responsive product card landing page inspired by the Nike website </p>
 
 
 ## 🔥 Demo 
